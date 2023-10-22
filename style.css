@@ -15,7 +15,7 @@ a {
 
 a:hover {
     color: rgb(175, 175, 175);
-    transition: 2s;
+    transition: 1;
 }
 
 img {
