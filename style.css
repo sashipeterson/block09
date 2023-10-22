@@ -1,0 +1,67 @@
+body {
+    font-family: sans-serif;
+    background-color: rgb(40, 40, 98);
+    color: white;
+}
+
+a {
+    color: white;
+}
+
+a:hover {
+    color: rgb(175, 175, 175);
+    text-decoration: none;
+}
+
+img {
+    max-width: 300px;
+    width: 100%;
+    height: auto;
+}
+
+#pageheader {
+    text-align: center;
+    margin: 10px;
+}
+
+#pagemain {
+    display: flex;
+    margin: 10px;
+    padding: 10px;
+    background-color: rgb(7, 2, 106);
+}
+
+#pagemainportfolio {
+    margin: 10px;
+    padding: 10px;
+    background-color: rgb(7, 2, 106);
+}
+
+#navigation {
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+    font-size: 20px;
+}
+
+.column {
+    flex: 1;
+    padding: 10px;
+}
+
+.project {
+    background-color: rgb(43, 43, 224);
+    text-align: center;
+    margin: 20px;
+    padding: 10px;
+    width: 90%;
+}
+
+.project p {
+    text-align: left;
+}
+
+.about {
+    width: 100%;
+    text-align: center;
+}
