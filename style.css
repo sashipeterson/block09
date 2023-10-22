@@ -1,16 +1,21 @@
 body {
-    font-family: sans-serif;
+    font-family: "Poppins", sans-serif;
     background-color: rgb(40, 40, 98);
     color: white;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 a {
     color: white;
+    transition: 2s;
 }
 
 a:hover {
     color: rgb(175, 175, 175);
-    text-decoration: none;
+    transition: 1;
 }
 
 img {
@@ -25,16 +30,12 @@ img {
 }
 
 #pagemain {
-    display: flex;
-    margin: 10px;
-    padding: 10px;
     background-color: rgb(7, 2, 106);
-}
-
-#pagemainportfolio {
-    margin: 10px;
+    width: 80%;
+    max-width: 800px;
+    justify-content: center;
+    margin: 10px auto;
     padding: 10px;
-    background-color: rgb(7, 2, 106);
 }
 
 #navigation {
@@ -44,17 +45,52 @@ img {
     font-size: 20px;
 }
 
+#navigation a {
+    margin: 5px;
+    margin-bottom: 1px;
+}
+
 .column {
     flex: 1;
     padding: 10px;
 }
 
+.flex {
+    justify-content: center;
+}
+
+@media (min-width: 800px) {
+    .flex {
+        display: flex;
+    }
+}
+
 .project {
-    background-color: rgb(43, 43, 224);
+    background-color: rgb(1, 1, 178);
     text-align: center;
-    margin: 20px;
-    padding: 10px;
+    margin: 30px auto;
+    padding: 20px;
     width: 90%;
+    transition: 2s;
+    opacity: 80%;
+}
+
+.project:hover {
+    background-color: rgb(38, 38, 255);
+    text-align: center;
+    margin: 30px auto;
+    padding: 20px;
+    width: 90%;
+    transition: 2s;
+    opacity: 100%;
+}
+
+.project img {
+    width: 80%;
+}
+
+.project img:hover {
+    width: 100%;
 }
 
 .project p {
@@ -64,4 +100,29 @@ img {
 .about {
     width: 100%;
     text-align: center;
+}
+
+#progress {
+    position: fixed;
+    bottom: 20px;
+    right: 10px;
+    height: 70px;
+    width: 70px;
+    display: none;
+    place-items: center;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgb(0, 0, 0);
+    cursor: pointer;
+}
+
+#progress-value {
+    height: calc(100% - 15px);
+    width: calc(100% - 15px);
+    background-color: #ffffff;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    font-size: 35px;
+    color: #000000;
+
 }
